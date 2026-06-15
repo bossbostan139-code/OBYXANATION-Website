@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Staff - OBYXANATION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">OBYXANATION</div>
+            <div class="nav-links">
+                <a href="index.html" data-en="Home" data-ro="Acasă"></a>
+                <a href="guide.html" data-en="Guide" data-ro="Ghid"></a>
+                <a href="rules.html" data-en="Rules" data-ro="Reguli"></a>
+                <a href="staff.html" data-en="Staff" data-ro="Echipă"></a>
+                <a href="gallery.html" data-en="Gallery" data-ro="Galerie"></a>
+                <a href="apply.html" class="active" data-en="Apply Staff" data-ro="Aplică Staff"></a>
+            </div>
+            <div class="language-toggle">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ro">RO</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="content-section">
+            <h1 data-en="Apply for Staff" data-ro="Aplică pentru Staff"></h1>
+            <p class="intro-text" data-en="Do you want to help manage and grow OBYXANATION? Apply to become part of our staff team!" data-ro="Vrei să ajuți la gestionarea și creșterea OBYXANATION? Aplică pentru a deveni parte din echipa noastră de personal!"></p>
+
+            <div class="apply-container">
+                <div class="requirements">
+                    <h2 data-en="Requirements" data-ro="Cerințe"></h2>
+                    <ul>
+                        <li data-en="Must be at least 13 years old" data-ro="Trebuie să ai cel puțin 13 ani"></li>
+                        <li data-en="Active member for at least 2 weeks" data-ro="Membru activ cel puțin 2 săptămâni"></li>
+                        <li data-en="Good standing - no rule violations" data-ro="Reputație bună - nicio încălcare a regulilor"></li>
+                        <li data-en="Available 5+ hours per week" data-ro="Disponibil 5+ ore pe săptămână"></li>
+                        <li data-en="Fluent in English or Romanian" data-ro="Cuvinte fluent în engleză sau română"></li>
+                        <li data-en="Mature and respectful" data-ro="Atitudine matură și respectuoasă"></li>
+                    </ul>
+                </div>
+
+                <div class="apply-form">
+                    <h2 data-en="Staff Application Form" data-ro="Formular de Aplicație Pentru Staff"></h2>
+                    <form id="apply-form" class="form-container">
+                        <div class="form-group">
+                            <label for="minecraft-name" data-en="Minecraft Username" data-ro="Nume de utilizator Minecraft"></label>
+                            <input type="text" id="minecraft-name" name="minecraftName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="discord-name" data-en="Discord Username" data-ro="Nume de utilizator Discord"></label>
+                            <input type="text" id="discord-name" name="discordName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-en="Email Address" data-ro="Adresă de E-mail"></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="position" data-en="Position" data-ro="Poziția"></label>
+                            <select id="position" name="position" required>
+                                <option value="">Select position</option>
+                                <option value="moderator">Moderator</option>
+                                <option value="builder">Builder</option>
+                                <option value="admin">Administrator</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="experience" data-en="Why do you want to join staff?" data-ro="De ce vrei să te alături staff-ului?"></label>
+                            <textarea id="experience" name="experience" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="availability" data-en="Hours per week available" data-ro="Ore pe săptămână disponibile"></label>
+                            <input type="number" id="availability" name="availability" min="5" required>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="rules-agree" name="rulesAgree" required>
+                            <label for="rules-agree" data-en="I agree to follow all server rules" data-ro="Sunt de acord să urmez toate regulile serverului"></label>
+                        </div>
+                        <button type="submit" class="btn btn-submit" data-en="Submit Application" data-ro="Trimite Aplicația"></button>
+                    </form>
+                    <p class="form-note" data-en="You will receive a response on Discord within 3-5 days." data-ro="Vei primi un răspuns pe Discord în 3-5 zile."></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-en="© 2025 OBYXANATION - All Rights Reserved" data-ro="© 2025 OBYXANATION - Toate drepturile rezervate"></p>
+            <div class="footer-links">
+                <a href="https://discord.gg/mweJkVBR" target="_blank">Discord</a>
+                <a href="https://www.youtube.com/@ObyXs10" target="_blank">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
